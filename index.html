@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Financial Dashboard</title>
+  <style>
+    body { font-family: Arial, sans-serif; text-align: center; }
+    .charts { display: flex; justify-content: space-around; flex-wrap: wrap; }
+    .charts canvas { max-width: 400px; }
+    .image-container { margin: 20px; }
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <h1>Financial Dashboard</h1>
+  <div class="image-container">
+    <img src="images/green_coffee.svg" alt="Green coffee in burlap bags" width="300" />
+  </div>
+  <label for="monthRange">Months to display:</label>
+  <input type="range" id="monthRange" min="1" max="6" value="6" />
+  <div class="charts">
+    <canvas id="revenueChart"></canvas>
+    <canvas id="profitChart"></canvas>
+  </div>
+  <script src="dashboard.js"></script>
+</body>
+</html>
